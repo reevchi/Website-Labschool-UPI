@@ -1,298 +1,502 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+        <!--=============== REMIXICONS ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
 
-      <title>SD Labschool UPI Purwakarta</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <div class="logocontainer">
-               <div class="logo_image">
-                  <img src="assets/img/Logo Labschool.JPG">
-               </div>
+        <title>SD Labschool UPI Purwakarta</title>
+    </head>
+    <body oncontextmenu='return false' class='snippet-body'>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="logocontainer">
+                <div class="logo_image">
+                    <img src="assets/img/Logo Labschool.JPG">
+                </div>
+                </div>
+                <a href="#" class="nav__logo" style="text-decoration:none">SD Labschool UPI Purwakarta</a>
+
+                <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" style="text-decoration:none">Profile</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#courses" class="nav__link" style="text-decoration:none">Kegiatan</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#program" class="nav__link" style="text-decoration:none">Program</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#Fasilitas" class="nav__link" style="text-decoration:none">Fasilitas</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" style="text-decoration:none">Kontak</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+                </div>
+
+                <div class="nav__actions">
+                <!-- Search button -->
+                <i class="ri-search-line nav__search" id="search-btn"></i>
+
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== SEARCH ====================-->
+        <div class="search" id="search">
+            <form action="" class="search__form">
+                <i class="ri-search-line search__icon"></i>
+                <input type="search" placeholder="What are you looking for?" class="search__input">
+            </form>
+
+            <i class="ri-close-line search__close" id="search-close"></i>
+        </div>
+
+        <!--==================== LOGIN ====================-->
+        <div class="login" id="login">
+            <form action="" class="login__form">
+                <h2 class="login__title">Log In</h2>
+                
+                <div class="login__group">
+                <div>
+                    <label for="email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your email" id="email" class="login__input">
+                </div>
+                
+                <div>
+                    <label for="password" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" class="login__input">
+                </div>
+                </div>
+
+                <div>
+                <p class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </p>
+
+                <a href="#" class="login__forgot">
+                    You forgot your password
+                </a>
+
+                <button type="submit" class="login__button">Log In</button>
+                </div>
+            </form>
+
+            <i class="ri-close-line login__close" id="login-close"></i>
+        </div>
+
+        <!--==================== MAIN ====================-->
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/Slider 1.PNG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption mb-3">
+                        <h1>Penerimaan Peserta Didik Baru</h1>
+                        <p><span class="care fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet mauris ullamcorper, consectetur nisi ac, faucibus magna. Aliquam erat volutpat. Nam in viverra libero. Nunc ut semper augue. Donec in egestas massa, non blandit lacus. Pellentesque quis ornare enim. Etiam neque quam, egestas in rhoncus sit amet, tincidunt at magna. Cras non ullamcorper leo. Phasellus et facilisis massa, id feugiat justo.</p>
+                            <div><button class="btn btn-primary" type="button">Daftar</button></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/Slider 2.PNG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption mb-3">
+                        <h1>Penerimaan Peserta Didik Baru</h1>
+                        <p><span class="care fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet mauris ullamcorper, consectetur nisi ac, faucibus magna. Aliquam erat volutpat. Nam in viverra libero. Nunc ut semper augue. Donec in egestas massa, non blandit lacus. Pellentesque quis ornare enim. Etiam neque quam, egestas in rhoncus sit amet, tincidunt at magna. Cras non ullamcorper leo. Phasellus et facilisis massa, id feugiat justo.</p>
+                            <div><button class="btn btn-primary" type="button">Daftar</button></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/Slider 3.PNG" class="d-block w-100" alt="...">
+                        <div class="carousel-caption mb-3">
+                            <h1>Penerimaan Peserta Didik Baru</h1>
+                            <p><span class="care fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet mauris ullamcorper, consectetur nisi ac, faucibus magna. Aliquam erat volutpat. Nam in viverra libero. Nunc ut semper augue. Donec in egestas massa, non blandit lacus. Pellentesque quis ornare enim. Etiam neque quam, egestas in rhoncus sit amet, tincidunt at magna. Cras non ullamcorper leo. Phasellus et facilisis massa, id feugiat justo.</p>
+                            <div><button class="btn btn-primary" type="button">Daftar</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                </div>
             </div>
-            <a href="#" class="nav__logo">SD Labschool UPI Purwakarta</a>
-
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link">Profile</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#courses" class="nav__link">Kegiatan</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#program" class="nav__link">Program</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#Fasilitas" class="nav__link">Fasilitas</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#contact" class="nav__link">Kontak</a>
-                  </li>
-               </ul>
-
-               <!-- Close button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
-            </div>
-
-            <div class="nav__actions">
-               <!-- Search button -->
-               <i class="ri-search-line nav__search" id="search-btn"></i>
-
-               <!-- Login button -->
-               <i class="ri-user-line nav__login" id="login-btn"></i>
-
-               <!-- Toggle button -->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-line"></i>
-               </div>
-            </div>
-         </nav>
-      </header>
-
-      <!--==================== SEARCH ====================-->
-      <div class="search" id="search">
-         <form action="" class="search__form">
-            <i class="ri-search-line search__icon"></i>
-            <input type="search" placeholder="What are you looking for?" class="search__input">
-         </form>
-
-         <i class="ri-close-line search__close" id="search-close"></i>
-      </div>
-
-      <!--==================== LOGIN ====================-->
-      <div class="login" id="login">
-         <form action="" class="login__form">
-            <h2 class="login__title">Log In</h2>
-            
-            <div class="login__group">
-               <div>
-                  <label for="email" class="login__label">Email</label>
-                  <input type="email" placeholder="Write your email" id="email" class="login__input">
-               </div>
-               
-               <div>
-                  <label for="password" class="login__label">Password</label>
-                  <input type="password" placeholder="Enter your password" id="password" class="login__input">
-               </div>
-            </div>
-
-            <div>
-               <p class="login__signup">
-                  You do not have an account? <a href="#">Sign up</a>
-               </p>
-   
-               <a href="#" class="login__forgot">
-                  You forgot your password
-               </a>
-   
-               <button type="submit" class="login__button">Log In</button>
-            </div>
-         </form>
-
-         <i class="ri-close-line login__close" id="login-close"></i>
-      </div>
-
-      <!--==================== MAIN ====================-->
-    <section> 
+        </section>
+                
+    <!-- <section> 
         <div class="containerslider">
-            <div class="slider-wraper">
+                <div class="slider-wraper">
                 <div class="slider">
                     <img id="slide-1" src="assets/img/Slider 1.PNG">
                     <img id="slide-2" src="assets/img/Slider 2.PNG">
                     <img id="slide-3" src="assets/img/Slider 3.PNG">
                 </div>
-            </div>
-            <div class="slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-            </div>
+                </div>
+                <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                </div>
         </div>
-    </section>
-
-<div class="section-about">
-    <section id="about">
-        <h2>Profile</h2>
-        <p>Informasi tentang sejarah, visi, misi, dan nilai-nilai sekolah.</p>
-</div>
-<div class="cardpos">
-   <div class="cardcontainer">
-      <div class="image-container">
-         <img src="assets/img/Profile pict.jpg">
-      </div>
-    <div class="text-container">
-         <h2>Visi</h2>
-         <p>Menjadikan sentra pendidikan dasar untuk menyiapkan siswa yang religius, progresif, dan berdaya saing global.</p>
-         <h2>Misi</h2>
-         <p>1. Menciptakan lingkungan pembelajaran yang mampu membangun individu beriman dan bertaqwa kepada Tuhan yang Maha Esa.</p>
-         <p>2. Mengembangkan sistem pendidikan yang inovatif berbasis ICT dan project based learning untuk membangun keterampilan abad 21 pada diri peserta didik.</p>
-         <p>3. Menciptakan suasana akademik yang kondisif untuk mengembangkan berbagai potensi peserta didik yang variatif.</p>
-         <p>4. Membentuk peserta didik yang memiliki kecintaan terhadap budaya berlandaskan keimanan dan ketakwaan kepada Tuhan yang Maha Esa.</p>
-         <p>5. Menciptakan suasana lingkungan berbasis green school untuk menumbuhka kepekaan peserta didik terhadap lingkungan.</p>
-         <p>6. Menerapkan berbagai hasil riset pendidikan untuk pengembangan model layana akademik yang inovatif sebagai percontohan penyelenggaraan sekolah dasar yang unggul.</p>
-    </div>
-  </div>
-</div>
-
-    </section>
-
-<div class="section-courses">
-    <section id="courses">
-        <h2>Kegiatan</h2>
-        <p>Daftar program belajar yang ditawarkan di sekolah.</p>
-        <div class="card-container-kegiatan">
-           <div class="card1kegiatan">
-              <img src="assets/img/contoh kegiatan.png">
-              <div class="card-content-kegiatan">
-                 <h2>Pramuka</h2>
-                 <p>deskripsi kegiatan</p>
-              </div>
-           </div>
-            <div class="card2kegiatan">
-              <img src="">
-              <div class="card-content-kegiatan">
-                 <h2>Karate</h2>
-                 <p>deskripsi kegiatan</p>
-              </div>
-           </div>
-            <div class="card3kegiatan">
-              <img src="">
-              <div class="card-content-kegiatan">
-                 <h2>Panahan</h2>
-                 <p>deskripsi kegiatan</p>
-              </div>
-           </div>
-            <div class="card4kegiatan">
-              <img src="">
-              <div class="card-content-kegiatan">
-                 <h2>Seni Vocal</h2>
-                 <p>deskripsi kegiatan</p>
-              </div>
-           </div>
-            <div class="card5kegiatan">
-              <img src="">
-              <div class="card-content-kegiatan">
-                 <h2>Seni Tari</h2>
-                 <p>deskripsi kegiatan</p>
-              </div>
-           </div>
-            <div class="card6kegiatan">
-              <img src="">
-              <div class="card-content-kegiatan">
-                 <h2>Futsal</h2>
-                 <p>deskripsi kegiatan</p>
-              </div>
-           </div>
-            <div class="card7kegiatan">
-              <img src="">
-              <div class="card-content-kegiatan">
-                 <h2>Seni Rupa</h2>
-                 <p>deskripsi kegiatan</p>
-              </div>
-           </div>
-            <div class="card8kegiatan">
-              <img src="">
-              <div class="card-content-kegiatan">
-                 <h2>Lego</h2>
-                 <p>deskripsi kegiatan</p>
-              </div>
-           </div>
-            <div class="card9kegiatan">
-              <img src="">
-              <div class="card-content-kegiatan">
-                 <h2>Angklung</h2>
-                 <p>deskripsi kegiatan</p>
-              </div>
-           </div>
-            <div class="card10kegiatan">
-              <img src="">
-              <div class="card-content-kegiatan">
-                 <h2>Robotik</h2>
-                 <p>deskripsi kegiatan</p>
-              </div>
-           </div>
-        </div>
-    </section>
-</div>
-<div class="section-program">
-    <section id="program">
-        <h2>Program</h2>
-        <p>Program yang tersedia.</p>
-</div>
-        <div class="card-container-program">
-            <div class="card1program">
-                <img src="image/Konten.jpg">
-                <div class="card-content-program">
-                    <h3>Card 1</h3>
-                    <p>deskripsi konten</p>
-                    <a href="" class="btn">Read More</a>
+    </section> -->
+        <section>
+            <div class="section-about">
+                <section id="about">
+                <h2>Profile</h2>
+                <p>Informasi tentang sejarah, visi, misi, dan nilai-nilai sekolah.</p>
+            </div>
+            <div class="cardpos">
+                <div class="cardcontainer">
+                <div class="image-container">
+                    <img src="assets/img/Profile pict.jpg">
+                </div>
+                <div class="text-container">
+                    <h2>Visi</h2>
+                    <p>Menjadikan sentra pendidikan dasar untuk menyiapkan siswa yang religius, progresif, dan berdaya saing global.</p>
+                    <h2>Misi</h2>
+                    <p>1. Menciptakan lingkungan pembelajaran yang mampu membangun individu beriman dan bertaqwa kepada Tuhan yang Maha Esa.</p>
+                    <p>2. Mengembangkan sistem pendidikan yang inovatif berbasis ICT dan project based learning untuk membangun keterampilan abad 21 pada diri peserta didik.</p>
+                    <p>3. Menciptakan suasana akademik yang kondisif untuk mengembangkan berbagai potensi peserta didik yang variatif.</p>
+                    <p>4. Membentuk peserta didik yang memiliki kecintaan terhadap budaya berlandaskan keimanan dan ketakwaan kepada Tuhan yang Maha Esa.</p>
+                    <p>5. Menciptakan suasana lingkungan berbasis green school untuk menumbuhka kepekaan peserta didik terhadap lingkungan.</p>
+                    <p>6. Menerapkan berbagai hasil riset pendidikan untuk pengembangan model layana akademik yang inovatif sebagai percontohan penyelenggaraan sekolah dasar yang unggul.</p>
                 </div>
             </div>
-            <div class="card2program">
-                <img src="image/Konten.jpg">
-                <div class="card-content-program">
-                    <h3>Card 2</h3>
-                    <p>deskripsi konten</p>
-                    <a href="" class="btn">Read More</a>
+            </div>
+        </section>
+
+        <section id="courses" class="pt-5 pb-5">
+            <div class="section-courses">
+                <h2>Kegiatan</h2>
+                <p>Daftar program belajar yang ditawarkan di sekolah.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="mb-3"></h3>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+        
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Pramuka</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Karate</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Panahan</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Seni Vocal</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Seni Tari</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Futsal</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Seni Rupa</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Lego</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Angklung</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card3program">
-                <img src="image/Konten.jpg">
-                <div class="card-content-program">
-                    <h3>Card 2</h3>
-                    <p>deskripsi konten</p>
-                    <a href="" class="btn">Read More</a>
+        </section>
+
+
+        <!-- <div class="section-courses">
+            <section id="courses">
+                <h2>Kegiatan</h2>
+                <p>Daftar program belajar yang ditawarkan di sekolah.</p>
+                <div class="card-container-kegiatan">
+                <div class="card1kegiatan">
+                    <img src="assets/img/contoh kegiatan.png">
+                    <div class="card-content-kegiatan">
+                        <h2>Pramuka</h2>
+                        <p>deskripsi kegiatan</p>
+                    </div>
                 </div>
-            </div>
+                    <div class="card2kegiatan">
+                    <img src="">
+                    <div class="card-content-kegiatan">
+                        <h2>Karate</h2>
+                        <p>deskripsi kegiatan</p>
+                    </div>
+                </div>
+                    <div class="card3kegiatan">
+                    <img src="">
+                    <div class="card-content-kegiatan">
+                        <h2>Panahan</h2>
+                        <p>deskripsi kegiatan</p>
+                    </div>
+                </div>
+                    <div class="card4kegiatan">
+                    <img src="">
+                    <div class="card-content-kegiatan">
+                        <h2>Seni Vocal</h2>
+                        <p>deskripsi kegiatan</p>
+                    </div>
+                </div>
+                    <div class="card5kegiatan">
+                    <img src="">
+                    <div class="card-content-kegiatan">
+                        <h2>Seni Tari</h2>
+                        <p>deskripsi kegiatan</p>
+                    </div>
+                </div>
+                    <div class="card6kegiatan">
+                    <img src="">
+                    <div class="card-content-kegiatan">
+                        <h2>Futsal</h2>
+                        <p>deskripsi kegiatan</p>
+                    </div>
+                </div>
+                    <div class="card7kegiatan">
+                    <img src="">
+                    <div class="card-content-kegiatan">
+                        <h2>Seni Rupa</h2>
+                        <p>deskripsi kegiatan</p>
+                    </div>
+                </div>
+                    <div class="card8kegiatan">
+                    <img src="">
+                    <div class="card-content-kegiatan">
+                        <h2>Lego</h2>
+                        <p>deskripsi kegiatan</p>
+                    </div>
+                </div>
+                    <div class="card9kegiatan">
+                    <img src="">
+                    <div class="card-content-kegiatan">
+                        <h2>Angklung</h2>
+                        <p>deskripsi kegiatan</p>
+                    </div>
+                </div>
+                    <div class="card10kegiatan">
+                    <img src="">
+                    <div class="card-content-kegiatan">
+                        <h2>Robotik</h2>
+                        <p>deskripsi kegiatan</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </div> -->
+
+        <div class="section-program">
+            <section id="program">
+                <h2>Program</h2>
+                <p>Program yang tersedia.</p>
+                <div class="card-container-program">
+                    <div class="card1program">
+                        <img src="assets/img/Konten.jpg">
+                        <div class="card-content-program">
+                            <h3>Program 1</h3>
+                            <p>deskripsi</p>
+                            <a href="" class="btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card2program">
+                        <img src="assets/img/Konten.jpg">
+                        <div class="card-content-program">
+                            <h3>Program 2</h3>
+                            <p>deskripsi</p>
+                            <a href="" class="btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card3program">
+                        <img src="assets/img/Konten.jpg">
+                        <div class="card-content-program">
+                            <h3>Program 3</h3>
+                            <p>deskripsi</p>
+                            <a href="" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
-<div class="section-fasilitas-contact">
-    <section id="Fasilitas">
-      <h2>Fasilitas Kami</h2>
-      <p>Fasilitas yang tersedia</p>
-    </section>
-<div class="cardsection-contact">
-    <section id="contact">
-        <h2>Kontak</h2>
-        <p>Informasi kontak sekolah.</p>
-            <ul class="wrappercontact">
-               <li class="icon facebook">
-                  <span class="tooltip">Facebook</span>
-                  <span><i class="fab fa-facebook-f"></i></span>
-               </li>
-               <li class="icon instagram">
-                  <span class="tooltip">Instagram</span>
-                  <span><i class="fab fa-instagram"></i></span>
-               </li>
-               <li class="icon youtube">
-                  <span class="tooltip">Youtube</span>
-                  <span><i class="fab fa-youtube"></i></span>
-               </li>
-            </ul>
-    </section>
-</div>
-</div>
+        
+        <div class="section-fasilitas-contact">
+            <section id="Fasilitas">
+                <h2>Fasilitas Kami</h2>
+                <p>Fasilitas yang tersedia</p>
+            </section>
+        </div>
+
+        <div class="cardsection-contact text-center">
+            <section id="contact">
+                <h2>Kontak</h2>
+                <p>Informasi kontak sekolah.</p>
+                <div class="row">
+                <ul class="wrappercontact ">
+                    <li>
+                        <a class="icon facebook" href="https://www.facebook.com/people/Labschool-Upi-Purwakarta/pfbid06C98gwBBxdD9MM3KKp4P62G6ZU6uCH6h9mgR8euyGeHhso6niqJDk6MAtqJRUhUml/" target="_blank">
+                            <span class="tooltip">Facebook</span>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon instagram" href="https://www.instagram.com/sdlabschoolupipwk/" target="_blank">
+                            <span class="tooltip">Instagram</span>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon youtube" href="https://www.youtube.com/@SDLabschoolUPIPurwakarta" target="_blank">
+                            <span class="tooltip">Youtube</span>
+                            <span><i class="fab fa-youtube"></i></span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </section>
+        </div>
 
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script type='text/javascript'></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+        <script type='text/javascript' src=''></script>
+        <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+        <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    </body>
 </html>
