@@ -55,6 +55,7 @@ input,
 button {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  overflow-x: hidden;
 }
 
 body {
@@ -142,6 +143,23 @@ img {
   box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
   z-index: var(--z-fixed);
 }
+
+/* Carousel blank space fixed but using .1s transition */
+.carousel-item {
+  float: none;
+  transition: .1s ease-in-out !important;
+}
+
+/* .carousel {
+  width:100% !important; 
+  overflow: hidden !important; 
+  right:0 !important; 
+}
+
+.carousel-caption {
+  right:0 !important;
+  left:0!important;
+} */
 
 .nav {
   height: var(--header-height);
@@ -413,6 +431,9 @@ section {
     text-align: center;
 }
 
+.section-prestasi {
+  text-align: center;
+}
 
 .section-fasilitas-contact {
     text-align: center;
@@ -539,7 +560,7 @@ p {
     margin: 20px;
 }
 .card img{
-    width: 100px;
+    /* width: 100px; */
     height: auto;
     object-fit: cover;
 }
@@ -580,7 +601,8 @@ p {
 }
 
 .logo_image img {
-  max-width: 50px;
+  max-width: 3rem;
+  /* max-width: 50px; */
   display: block;
 }
 .card-container-kegiatan{
@@ -676,6 +698,13 @@ p {
     height: 200px;
     object-fit: cover;
 }
+
+/* Footer */
+footer {
+  padding: 5px 0;
+  background-color: hsl(230, 100%, 95%);
+}
+
 .cardsection-contact{
     display: flex;
     justify-content: center;
@@ -683,8 +712,8 @@ p {
     margin-top: 10px;
     box-shadow: 0px 2px 4px rgba(0,0,0,0,2);
     padding: 0px;
-    width: px;
-    height: 400px;
+    /* width: px; */
+    /* height: 400px; */
     background-color: #f3f3f3;
 }
 .wrappercontact {
@@ -748,6 +777,9 @@ p {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.email {
+  --color: #1baaf2;
+}
 .facebook {
   --color: #1877f2;
 }
@@ -764,3 +796,4 @@ p {
   background: var(--color);
   color: white;
 }
+
